@@ -147,18 +147,18 @@ input {
 
     .aside {
         margin: 20px;
-        width: auto;
+        width: 90%;
         height: auto;
         padding: 10px;
         overflow: scroll;
-       
+        justify-content: space-between;
     }
     li{
         margin: 10px 0;
         padding:10px;
         width: 100%; 
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         
     }
 }
