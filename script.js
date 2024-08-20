@@ -4,10 +4,7 @@ const todoTime = document.getElementById('todo-time');
 const todoList = document.getElementById('todo-list');
 const asideElement = document.getElementById('asideElement');
 
-document.getElementById('todo-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent page refresh
-    submitTask();
-});
+
 
 
 
