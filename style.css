@@ -5,50 +5,8 @@
     font-family: sans-serif;
 }
 
-/* Mobile devices */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column; 
-        justify-content: flex-start; 
-        align-items: center; 
-    }
-
-   
-    #main {
-        width: 90%; 
-        height: auto; 
-        padding: 10px;
-    }
-    .aside{
-        margin-top: 20px;
-        width: 90%; 
-        height: auto; 
-        padding: 10px;
-    
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-
-    #main {
-        width: 90%; 
-        height: auto; 
-        padding: 10px;
-    }
-    .aside {
-        margin-left: 0px;
-        width: 80%; 
-        height: auto; 
-        padding: 10px;
-    }
-   
-}
-
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: space-around;
@@ -62,10 +20,9 @@ main {
     height: 550px;
     border-radius: 20px;
     background: linear-gradient(90deg, rgba(167,162,244,1) 0%, rgba(112,112,143,1) 35%, rgba(166,149,13,1) 100%, rgba(0,212,255,1) 100%);
-} 
+}
 
 .aside {
-  
     width: 500px;
     height: 550px;
     border-radius: 20px;
@@ -91,14 +48,14 @@ nav {
     gap: 10px;
 }
 
-#addtask{
+#addtask {
     width: 50%;
     height: 40px;
-    margin-top:5%;
+    margin-top: 5%;
     color: white !important;
     outline: none;
     border: 0.5px solid white;
-    border-radius:20px;
+    border-radius: 20px;
     background-color: transparent;
     cursor: pointer;
 }
@@ -152,4 +109,52 @@ input {
     border-bottom: 1px solid white;
     background-color: transparent;
     text-align: center;
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #main {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .aside {
+        margin-top: 20px;
+        width: 80%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+        flex-direction: column;
+  
+    }
+
+    #main {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .aside {
+        margin: 20px 0;
+        width: 50%;
+        height: auto;
+        padding: 10px;
+        overflow: scroll;
+    }
+    li{
+        width: 100%; 
+        flex-direction: column;
+    }
 }
