@@ -137,7 +137,6 @@ input {
     body {
         font-size: 12px;
         flex-direction: column;
-  
     }
 
     #main {
@@ -147,14 +146,19 @@ input {
     }
 
     .aside {
-        margin: 20px 0;
-        width: 50%;
+        margin: 20px;
+        width: auto;
         height: auto;
         padding: 10px;
         overflow: scroll;
+        flex-basis: 100%;
     }
     li{
+        margin: 10px 0;
+        padding:10px;
         width: 100%; 
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
     }
 }
