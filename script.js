@@ -22,11 +22,13 @@ function submitTask() {
     // Create task text element
     const taskContent = document.createElement('span');
     taskContent.textContent = `Task: ${taskText}`;
+    taskContent.style.padding = '10px';
     listItem.appendChild(taskContent);
 
     // Create task time element
     const taskTimeElement = document.createElement('span');
     taskTimeElement.textContent = ` Date: ${taskTime}`;
+    taskTimeElement.style.padding = '10px';
     listItem.appendChild(taskTimeElement);
 
     // Complete button
