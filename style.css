@@ -161,4 +161,7 @@ input {
         flex-wrap: nowrap;
         
     }
+    input{
+        width: 50%;
+    }
 }
